@@ -1,0 +1,428 @@
+:root{
+        --gray: #D3D3D3;
+        --red: #ff0000;
+        --white: #fff;
+        --black: #212854;
+}
+
+
+*{
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+}
+
+html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 5.5rem;
+        scroll-behavior: smooth;
+}
+
+body{
+        background-color: #eeefef;
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 2%;
+}
+
+.wrapper{
+        background-color: #f6faff;
+        box-shadow: 0 0 10px #666;
+        border-radius: 5px;
+}
+
+img{
+        max-width: 100%;
+}
+
+
+.line{
+        clear: both;
+        height: 1px;
+        background-color: var(--red);
+        margin: 35px auto 10px;
+        width: 98%;
+}
+
+
+header .header-container{
+        background: var(--gray);
+        padding: 1.5rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+}
+
+header .header-container .logo-area{
+        width: 6rem;
+}
+
+header .header-container .icons{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+}
+
+header .header-container .icons a{
+        background: var(--red);
+        font-size: 2.5rem;
+        color: var(--white);
+        width: 4.5rem;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        text-align: center;
+        border-radius: .5rem;
+}
+
+header .header-container .icons a:hover{
+        color: var(--black);
+        cursor: pointer;
+        background-color: var(--white);
+}
+
+
+.home{
+        padding: 4rem 2rem;
+        text-align: center;
+}
+
+.home h2{
+        font-size: 3.5rem;
+        padding-bottom: 1rem;
+        color: var(--red);
+}
+
+.home h3{
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+        color: var(--white);
+}
+
+.home p{
+        font-size: 1.7rem;
+        width: 70%;
+        text-align: justify;
+        color: var(--white);
+        margin: 0 auto;
+}
+
+.wrapper .note{
+        background-color: var(--red);
+        padding: 2rem;
+}
+
+.wrapper .note p{
+        font-size: 1.5rem;
+        color: var(--white);
+        font-weight: bolder;
+}
+
+.wrapper .note a{
+        color: var(--black);
+        font-size: 1.6rem;
+}
+
+.wrapper .note a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+        color: var(--gray);
+}
+
+
+
+.wrapper .links .box-container{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 8rem 2rem 2rem 4rem;
+        justify-content: center;
+        gap: 4rem;
+        background: var(--gray);
+}
+
+.wrapper .links .box-container .box{
+        margin-bottom: 3rem;
+}
+
+.wrapper .links .box-container .box .back-box{
+        position: relative;
+        background: red;
+        width: 200px;
+        height: 300px;
+        
+}
+
+.wrapper .links .box-container .box .back-box .red{
+        max-width: 200px;
+        height: auto;
+        background-color: var(--white);
+        position: absolute;
+        top: -4rem;
+        left: -2rem;
+        box-shadow: 0 0 10px #666;
+        padding-bottom: 3rem;
+}
+
+
+.wrapper .links .box-container .box .back-box .red img{
+        text-align: center;
+        width: 10rem;
+        background: var(--red);
+        padding: 1rem;
+        height: 10rem;
+        line-height: 10rem;
+        margin: 0 auto;
+        display: block;
+        border-radius: 50%;
+        margin-top: 2.5rem;
+}
+
+.wrapper .links .box-container .box .back-box .red h2{
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--black);
+}
+
+.wrapper .links .box-container .box .back-box .red p{
+        font-size: 1.7rem;
+        padding: 0 1rem;
+        color: #666;
+        text-align: center;
+        margin-bottom: 2rem;
+}
+
+
+.wrapper .links .box-container .box .back-box .red button{
+        margin: 0 auto;
+        display: block;
+        padding: 1.5rem 2rem;
+        background: var(--red);
+        border-radius: .5rem;
+        color: var(--white);
+        font-size: 2rem;
+        font-weight: bolder;
+}
+
+.wrapper .links .box-container .box .back-box .red button:hover{
+        background: transparent;
+        border: 1px solid #ff0000;
+        color: var(--black);
+}
+
+
+.wrapper .values{
+        background: var(--black);
+        padding: 4rem 2rem;
+}
+
+.wrapper .values h2{
+        text-align: center;
+        font-size: 4rem;
+        color: var(--white);
+        padding-bottom: 2rem;
+}
+
+.wrapper .values span{
+        color: var(--red);
+}
+
+.wrapper .values p{
+        font-size: 1.5rem;
+        color: var(--white);
+        font-weight: 300;
+}
+
+
+.wrapper .work{
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        padding: 4rem 2rem;
+        background: var(--white);
+        gap: 2.5rem;
+}
+
+.wrapper .work .image{
+        max-width: 350px;
+}
+
+.wrapper .work .content{
+        max-width: 350px;
+}
+
+
+.wrapper .work .content h2{
+        font-size: 3rem;
+        color: var(--black);
+        font-weight: bold;
+        padding-bottom: 2.5rem;
+}
+
+.wrapper .work .content span{
+        color: var(--red);
+}
+
+.wrapper .work .content ul li{
+        list-style: none;
+        font-weight: 400;
+        color: var(--black);
+        font-size: 1.5rem;
+        padding-bottom: .8rem;
+        display: flex;
+        align-items: start;
+        gap: 1rem;
+}
+
+.wrapper .work .content ul li i{
+        color: var(--red);
+        font-size: 2rem;
+}
+
+
+.wrapper .section{
+        background: var(--gray);
+        padding: 3rem 2rem 4rem 2rem;    
+}
+
+.wrapper .section .section-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+
+}
+
+.wrapper .section .section-container .box{
+        max-width: 280px;
+        height: 300px;
+        background: var(--red);
+        padding: 3rem;
+        border-radius: .5rem;
+}
+
+.wrapper .section .section-container .box p{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        color: var(--white);
+        text-align: center;
+}
+
+.wrapper .footer{
+        background: var(--black);
+        padding: 2rem;
+
+}
+
+.wrapper .footer .footer-container img{
+        width: 15rem;
+        margin: 0 auto;
+        display: block;
+        padding: .5rem 2rem;
+        background-color: var(--white);
+}
+
+.wrapper .footer .footer-container h3{
+        font-size: 3rem;
+        text-align: center;
+        padding: 1rem 0;
+        color: var(--red);
+}
+
+.wrapper .footer .footer-container p{
+        text-align: center;
+        color: var(--white);
+        font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries starts */
+
+@media (max-width: 800px){
+        .wrapper .work .image{
+                max-width: 600px;
+        }
+
+        .wrapper .work{
+                flex-wrap: wrap;
+        }
+        
+        .wrapper .work .content{
+                max-width: 600px;
+        }
+
+        .wrapper .section .section-container{
+                flex-wrap: wrap;
+        }
+}
+
+
+
+
+
+@media (max-width: 650px){
+        .home p{
+                width: 100%;
+                padding: 0 2rem;
+        }
+}
+
+
+@media (max-width: 450px){
+        html{
+                font-size: 50%;
+                overflow-x: hidden;
+                scroll-padding-top: 5.5rem;
+                scroll-behavior: smooth;
+        }
+
+        .wrapper .links .box-container .box .back-box{
+                position: relative;
+                background: red;
+                width: 200px;
+                height: 240px;
+                
+        }
+
+        .wrapper .section .section-container .box{
+
+                height: auto;
+        }
+
+}
+
+/* media queries ends */
